@@ -1,0 +1,32 @@
+.home,
+.empresa {
+    font-family: "Century Gothic", sans-serif;
+}
+
+.home table {
+    margin: 10% 20% 0;
+    border-spacing: 10px;
+}
+
+.home img {
+    width: 250px;
+    height: 250px;
+}
+
+.home p {
+    font-size: 16px;
+    text-align: left;
+}
+
+.home h1 {
+    font-size: 32px;
+    text-align: left;
+}
+
+.empresa {
+    margin: 2% 20%;
+}
+
+.empresa h1 {
+    margin-bottom: 20px;
+}

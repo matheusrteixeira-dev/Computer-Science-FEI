@@ -1,0 +1,32 @@
+.titulo {
+    border: 1px solid gray;
+    margin-left: 170px;
+    margin-right: auto;
+    width: 60%;
+    background-color: #d0f0f6;
+    text-align: center;
+    padding: 9px;
+    overflow: auto; /* contém as imagens flutuantes */
+}
+
+.galeria {
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    margin: 100px 5px 5px 100px;
+}
+
+.galeria:hover {
+    border: 1px solid #777;
+}
+
+.galeria img {
+    width: 100%;
+    height: auto;
+}
+
+.descricao {
+    padding: 15px;
+    text-align: center;
+    background-color: cornflowerblue;
+}

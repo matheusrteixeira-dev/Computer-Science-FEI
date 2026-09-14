@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login de Usuário</title>
+</head>
+
+<body>
+    <h1>Login de Usuários</h1>
+    <img src="lista.jpg" alt="Usuários" width="200" height="200"><br>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/cadastro">Cadastrar</a></li>
+            <li><a href="/lista">Listar</a></li>
+        </ul>
+    </nav>
+
+    <form action="/login" method="post">
+        <label for="login">Login:</label>
+        <input type="text" id="login" name="login" required><br>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required><br><br>
+        <input type="submit" value="Login">
+    </form>
+
+    <% if (locals.mensagem) { %>
+    <h2><%= mensagem %></h2>
+    <% } %>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lista de Usuários</title>
+    <style>
+        .tabela {
+            width: 30%;
+        }
+
+        /* Linhas pares em branco */
+        .tabela tr:nth-child(even) {
+            background: #ffffff;
+        }
+
+        /* Linhas ímpares em preto */
+        .tabela tr:nth-child(odd) {
+            background: #000000;
+            color: #ffffff;
+        }
+
+        .botao {
+            background-color: blueviolet;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lista de Usuários</h1>
+    <img src="lista.jpg" alt="Lista" width="200" height="200"><br>
+
+    <table class="tabela">
+        <tr>
+            <th>Login</th>
+            <th>Nome</th>
+            <th>Senha</th>
+        </tr>
+        <% lista.forEach(function (usuario) { %>
+        <tr>
+            <td><%= usuario.login %></td>
+            <td><%= usuario.nome %></td>
+            <td><%= usuario.senha %></td>
+        </tr>
+        <% }); %>
+    </table>
+    <br>
+
+    <form action="/limpa" method="get">
+        <button class="botao" type="submit">Limpar Lista</button>
+    </form>
+    <form action="/index" method="get">
+        <button class="botao" type="submit">Novo Cadastro</button>
+    </form>
+</body>
+
+</html>

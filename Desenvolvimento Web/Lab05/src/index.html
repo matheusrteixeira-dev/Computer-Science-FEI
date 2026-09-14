@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manipulação do DOM com JavaScript</title>
+
+  <script>
+    /** Converte o texto digitado para letras maiúsculas. */
+    function maiusculo() {
+      const campo = document.getElementById("texto");
+      campo.value = campo.value.toUpperCase();
+    }
+
+    /** Altera o destino do link para o endereço digitado. */
+    function alterarLink() {
+      const endereco = document.getElementById("endereco").value;
+      document.getElementById("link").setAttribute("href", endereco);
+    }
+  </script>
+</head>
+
+<body>
+  <form>
+    <label for="texto">Maiúsculo:</label><br>
+    <input id="texto" type="text" name="texto">
+    <input type="button" value="CAPS" onclick="maiusculo();">
+
+    <br><br>
+    <label for="endereco">Link:</label><br>
+    <a href="https://www.google.com.br" id="link">Link</a>
+    <input id="endereco" type="text" name="endereco">
+    <input type="button" value="Alterar link" onclick="alterarLink();">
+  </form>
+</body>
+
+</html>

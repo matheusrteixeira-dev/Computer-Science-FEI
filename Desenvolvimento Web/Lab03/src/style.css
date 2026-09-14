@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.titulo {
+  background-color: black;
+  padding: 10px 0;
+}
+
+.titulo h1 {
+  margin-left: 25%;
+  color: rgb(34, 140, 92);
+  font-family: "Century Gothic", sans-serif;
+  font-size: 30px;
+}
+
+.sinopse {
+  background-color: #112f41;
+  overflow: auto; /* contém a imagem flutuante */
+}
+
+.sinopse img {
+  float: left;
+  padding-top: 20px;
+  padding-left: 10px;
+  width: 35%;
+  height: 300px;
+}
+
+.sinopse p {
+  color: white;
+  font-size: 14px;
+  font-family: "Century Gothic", sans-serif;
+  margin-left: 38%;
+  margin-right: 10%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.navegacao {
+  color: green;
+}
+
+a:hover {
+  color: red;
+}

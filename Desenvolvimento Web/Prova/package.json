@@ -1,0 +1,17 @@
+{
+  "name": "prova-cadastro-idosos",
+  "version": "1.0.0",
+  "description": "Cadastro e listagem de idosos com Express, EJS e MongoDB",
+  "main": "servidor.js",
+  "private": true,
+  "scripts": {
+    "start": "node servidor.js"
+  },
+  "author": "Matheus Teixeira",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.17.0",
+    "mongoose": "^5.5.9"
+  }
+}

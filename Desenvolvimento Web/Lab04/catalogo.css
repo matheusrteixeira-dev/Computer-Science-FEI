@@ -1,0 +1,17 @@
+table,
+th,
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+table#catalogo {
+    width: 100%;
+    border-spacing: 15px;
+    background-color: #f1f1c1;
+    text-align: center;
+}
+
+.voltar {
+    text-align: center;
+}

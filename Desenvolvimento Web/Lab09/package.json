@@ -1,0 +1,16 @@
+{
+  "name": "lab09-cadastro-usuarios",
+  "version": "1.0.0",
+  "description": "Cadastro de usuários em memória com Express e EJS",
+  "main": "servidor.js",
+  "private": true,
+  "scripts": {
+    "start": "node servidor.js"
+  },
+  "author": "Matheus Teixeira",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}

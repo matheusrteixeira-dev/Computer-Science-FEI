@@ -1,0 +1,15 @@
+{
+  "name": "lab08-paginas-estaticas",
+  "version": "1.0.0",
+  "description": "Servidor Express que entrega páginas HTML estáticas",
+  "main": "servidor.js",
+  "private": true,
+  "scripts": {
+    "start": "node servidor.js"
+  },
+  "author": "Matheus Teixeira",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

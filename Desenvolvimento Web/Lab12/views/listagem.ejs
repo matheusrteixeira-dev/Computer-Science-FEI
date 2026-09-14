@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Livros do Autor</title>
+</head>
+
+<body>
+    <h1>Livros do autor: <%= livros[0].autor %></h1>
+    <%- include('menu') %>
+
+    <table border="1">
+        <tr>
+            <th>Livro</th>
+            <th>Autor</th>
+        </tr>
+        <% livros.forEach(function (livro) { %>
+        <tr>
+            <td><%= livro.titulo %></td>
+            <td><%= livro.autor %></td>
+        </tr>
+        <% }); %>
+    </table>
+</body>
+
+</html>

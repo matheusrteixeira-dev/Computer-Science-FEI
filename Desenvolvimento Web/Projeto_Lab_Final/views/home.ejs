@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Biblioteca</title>
+    <link href="estilosLivros.css" rel="stylesheet">
+</head>
+
+<body class="background">
+    <div class="cadastro">
+        <h1 class="texto">Bem-vindo(a), <%= nome %>!</h1>
+        <h2 class="texto">Cadastro de livros</h2>
+
+        <form action="/cadastraLivro" method="post">
+            <input type="hidden" name="nome" value="<%= nome %>">
+            <input type="text" placeholder="título" name="titulo" required>
+            <input type="text" placeholder="autor" name="autor" required>
+            <button type="submit">CADASTRAR LIVRO</button>
+        </form>
+
+        <% if (locals.mensagem) { %>
+        <p class="texto"><%= mensagem %></p>
+        <% } %>
+
+        <p><a class="texto" href="/login">Sair</a></p>
+    </div>
+</body>
+
+</html>

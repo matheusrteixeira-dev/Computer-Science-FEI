@@ -1,0 +1,45 @@
+package Ex07;
+
+/**
+ * Roda do carro (marca, aro e material).
+ *
+ * @author Matheus Teixeira
+ */
+public class Rodas {
+    private String marca;
+    private int aro;
+    private String ferro;
+
+    public Rodas(String marca, int aro, String ferro) {
+        this.marca = marca;
+        this.aro = aro;
+        this.ferro = ferro;
+    }
+
+    public Rodas() {
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public int getAro() {
+        return aro;
+    }
+
+    public void setAro(int aro) {
+        this.aro = aro;
+    }
+
+    public String getFerro() {
+        return ferro;
+    }
+
+    public void setFerro(String ferro) {
+        this.ferro = ferro;
+    }
+}

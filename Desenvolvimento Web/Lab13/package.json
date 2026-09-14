@@ -1,0 +1,17 @@
+{
+  "name": "lab13-biblioteca",
+  "version": "1.0.0",
+  "description": "Cadastro, busca e exclusão de livros por autor com Express, EJS e MongoDB",
+  "main": "servidor.js",
+  "private": true,
+  "scripts": {
+    "start": "node servidor.js"
+  },
+  "author": "Matheus Teixeira",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.5.7"
+  }
+}

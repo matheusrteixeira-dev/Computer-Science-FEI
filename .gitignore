@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+
+# Build output
+build/
+dist/
+out/
+bin/
+obj/
+cmake-build-*/
+*.class
+*.jar
+*.o
+*.obj
+*.exe
+*.out
+
+# Java / NetBeans
+**/nbproject/private/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.iml
+*.suo
+*.user
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Local databases (MongoDB data directories used by the web labs)
+db/
+
+# Logs and OS files
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+desktop.ini

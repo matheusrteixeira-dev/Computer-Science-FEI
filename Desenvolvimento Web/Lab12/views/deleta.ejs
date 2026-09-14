@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Excluir por Autor</title>
+</head>
+
+<body>
+    <h1>Excluir Livros por Autor</h1>
+    <%- include('menu') %>
+
+    <form action="/deletar" method="post">
+        <select name="autor" required>
+            <option value="" disabled selected>Escolha um autor...</option>
+            <% autores.forEach(function (autor) { %>
+            <option value="<%= autor %>"><%= autor %></option>
+            <% }); %>
+        </select>
+        <input type="submit" value="Excluir">
+    </form>
+</body>
+
+</html>

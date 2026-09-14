@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro</title>
+    <link href="cadastra.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="cadastro">
+        <h1>Cadastro de usuário</h1>
+        <div class="form">
+            <form action="/cadastra" method="post">
+                <input type="text" placeholder="usuário" name="login" required>
+                <input type="text" placeholder="nome" name="nome" required>
+                <input type="password" placeholder="senha" name="senha" required>
+                <button type="submit">CADASTRAR</button>
+            </form>
+            <p><a href="/login">Voltar para o login</a></p>
+        </div>
+        <% if (locals.mensagem) { %>
+        <h2 class="mensagem"><%= mensagem %></h2>
+        <% } %>
+    </div>
+</body>
+
+</html>

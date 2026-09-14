@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lista de Idosos Cadastrados</title>
+</head>
+
+<body>
+    <h1>Lista de Idosos Cadastrados</h1>
+    <ul>
+        <li><a href="/index">Home</a></li>
+    </ul>
+
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Endereço</th>
+            <th>Idade</th>
+        </tr>
+        <% idosos.forEach(function (idoso) { %>
+        <tr>
+            <td><%= idoso.nome %></td>
+            <td><%= idoso.endereco %></td>
+            <td><%= idoso.idade %></td>
+        </tr>
+        <% }); %>
+    </table>
+</body>
+
+</html>

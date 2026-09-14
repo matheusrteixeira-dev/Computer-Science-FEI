@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro de Notas</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <form>
+        <label for="nome">Nome:</label>
+        <input id="nome" type="text" name="nome">
+        <br><br>
+        <label for="projeto">Projeto:</label>
+        <input id="projeto" type="number" name="projeto">
+        <br><br>
+        <label for="prova">Prova:</label>
+        <input id="prova" type="number" name="prova">
+        <br><br>
+        <label for="lab">Lab:</label>
+        <input id="lab" type="number" name="lab">
+        <br><br>
+        <input type="button" value="Cadastrar" onclick="cadastrar();">
+    </form>
+
+    <br><br>
+
+    <table id="tabela">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Projeto</th>
+                <th>Prova</th>
+                <th>Lab</th>
+                <th>Nota</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</body>
+
+</html>

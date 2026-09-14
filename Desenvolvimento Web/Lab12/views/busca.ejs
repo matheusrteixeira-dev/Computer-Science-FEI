@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Busca por Autor</title>
+</head>
+
+<body>
+    <h1>Busca por Autor</h1>
+    <%- include('menu') %>
+
+    <form action="/buscar" method="post">
+        <select name="autor" required>
+            <option value="" disabled selected>Escolha um autor...</option>
+            <% autores.forEach(function (autor) { %>
+            <option value="<%= autor %>"><%= autor %></option>
+            <% }); %>
+        </select>
+        <input type="submit" value="Buscar">
+    </form>
+</body>
+
+</html>
